@@ -3,7 +3,7 @@
   <head>
     <meta charset="UFT-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Студия</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,10 +25,10 @@
           <a href="./index.html" class="logo"><span class="logo-color">Web</span>Studio</a>
           <ul class="top-list">
             <li class="top-line-box">
-              <a href="./index.html" class="top-line active"> Студія</a>
+              <a href="./index.html" class="top-line active line"> Студия</a>
             </li>
-            <li class="top-line-box"><a href="./portfolio.html" class="top-line">Портфоліо</a></li>
-            <li class="top-line-box"><a href="" class="top-line">Контакти</a></li>
+            <li class="top-line-box"><a href="./portfolio.html" class="top-line">Портфолио</a></li>
+            <li class="top-line-box"><a href="" class="top-line">Контакты</a></li>
           </ul>
         </nav>
         <ul class="top-list-info">
@@ -41,7 +41,7 @@
           </li>
           <li class="top-info-box">
             <a href="tel:+380961111111" class="info"
-              ><svg class="info-icon" width="16" height="12">
+              ><svg class="info-icon" width="10" height="16">
                 <use href="./images/icons/icons.svg#icon-smartphone"></use></svg
               >+38 096 111 11 11</a
             >
@@ -58,7 +58,7 @@
             Эффективные решения<br />
             для вашего бизнеса
           </h1>
-          <button type="button" class="hat-button">Заказать услугу</button>
+          <button type="button" class="hat-button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <!--Особенности-->
@@ -121,12 +121,21 @@
           <ul class="we-doing-list">
             <li class="we-doing-box">
               <img src="./images/studio/we-doing/box1.jpg" alt="Изучаем технологии" width="370" />
+              <div class="we-doing-label">
+                <h3 class="we-doing-label-text">Десктопные приложения</h3>
+              </div>
             </li>
             <li class="we-doing-box">
               <img src="./images/studio/we-doing/box2.jpg" alt="подбираем варианты" width="370" />
+              <div class="we-doing-label">
+                <h3 class="we-doing-label-text">Мобильные приложения</h3>
+              </div>
             </li>
             <li class="we-doing-box">
               <img src="./images/studio/we-doing/box3.jpg" alt="Внимание к деталям" width="370" />
+              <div class="we-doing-label">
+                <h3 class="we-doing-label-text">Дизайнерские решения</h3>
+              </div>
             </li>
           </ul>
         </div>
@@ -374,5 +383,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="close-button" type="button" data-modal-close>
+          <svg class="close-button-icon">
+            <use href="./images/icons/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
